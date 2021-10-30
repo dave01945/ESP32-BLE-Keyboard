@@ -510,6 +510,8 @@ void BleKeyboard::onConnect(BLEServer* pServer) {
 
 #endif // !USE_NIMBLE
 
+	advertising->start();
+
 }
 
 void BleKeyboard::onDisconnect(BLEServer* pServer) {
